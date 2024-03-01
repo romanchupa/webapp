@@ -1,13 +1,13 @@
 name: CI/CD to Azure Container Registry
 
 env:
-  AZURE_CONTAINER_REGISTRY: yourcontainerregistry.azurecr.io
-  AZURE_CONTAINER_REGISTRY_USERNAME: yourcontainerregistry
+  AZURE_CONTAINER_REGISTRY: rc1registry.azurecr.io
+  AZURE_CONTAINER_REGISTRY_USERNAME: rc1registry
   IMAGE_NAME: webapp
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
